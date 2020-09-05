@@ -1,0 +1,115 @@
+
+<body>
+  <section class="next" id="next1">
+    <div class="box">
+      <div id="find-add" class="tit">Add Exhibit</div>
+      <div class="form_ex">
+
+        <form id="text_box" method="post" action="addexhibit">
+          <label for="exhibit_name1">Exhibit Name:</label>
+          <input type="text" id="exi-name" class="form_co" name="exhibit_name" ><br>
+          <label for="species_in_exhibit1">Species in Exhibit:</label>
+          <input type="number" id="spe-ex" class="form_co" name="species_in_exhibit" min="0" ><br>
+          <label for="exhibit_total1">Exhibit Size:</label>
+          <input type="number" id="ani-exh" class="form_co" name="exhibit_total" min="0" ><br>
+          <input class= "button" id="new-add" type="submit" value="Add">
+      </form>
+    </div>
+  </div>
+
+</section>
+<!-- ///////////////////////////////////////////////////// -->
+<!-- error text for not enough info -->
+<div id="hide"></div>
+<div class="error1" id="error_box1">
+  <div class="top_button">
+    <div class="text-top">Willamette River Zoo</div>
+    <input class= "close" id="close-box" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle">
+    <div class="roundx">X</div>
+    <div class="comment">
+      <div class="error_text">Too add a new Exhibit you must fill in all the fields.</div>
+      <div class="error_text">Click the ok button or the x in the corner and fill out</div>
+      <div class="error_text">all the nessicary fields.</div>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close" type="submit" value="OK"></input>
+  </div>
+</div>
+
+<!-- ///////////////////////////////////////////////////// -->
+<!-- error text for repeated info -->
+<div id="hide"></div>
+<div class="error1" id="error_box3">
+  <div class="top_button">
+    <div class="text-top">Willamette River Zoo</div>
+    <input class= "close" id="close-box" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle">
+    <div class="roundx">X</div>
+    <div class="comment">
+      <div class="error_text">Too add a new Exhibit you must choose a different name.</div>
+      <div class="error_text">Click the ok button or the x in the corner and fill change</div>
+      <div class="error_text">all the nessicary fields.</div>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close" type="submit" value="OK"></input>
+  </div>
+</div>
+
+<!-- when you want to delete what you just added -->
+<div id="hide" name="please" ></div>
+<div class="error1" id="error_box2">
+  <div class="top_button">
+    <div class="text-top1">Willamette River Zoo</div>
+    <input class= "close" id="close-box1" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle">
+    <div class="comment">
+      <div class="error_text">Are you sure you want to delete this element?</div>
+      <div class="error_text">Click the Ok to delete element.</div>
+      <div class="error_text">Click top corner to cancel.</div>
+    </div>
+  </div>
+  <div class="other-close">
+    <button class="ok" id="ok-close1" type="submit" onclick="deleteExhibit({{exhibit_id}})">OK</button>
+  </div>
+</div>
+
+
+<!-- when you wan to edit something -->
+<div id="hide"></div>
+<div class="edit-box" id="bigedit">
+  <div class="top_button">
+    <div class="text-top1">Willamette River Zoo</div>
+    <input class= "close" id="close-box2" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle1">
+    <div class="tit">Edit Exhibit</div>
+    <div class="form_ex">
+      <form id="text_box1" method action>
+        <label for="exhibit_id" id="value0-text">Exhibit Id:</label>
+        <input type="text" id="exi-id-edit" class="form_co" name="exhibit_id11" value></input>
+        <br>
+        <label for="exhibit_name" id="value1-text">Exhibit Name:</label>
+        <input type="text" id="exi-name-edit" class="form_co" name="exhibit_name11" value></input>
+        <br>
+        <label for="species_in_exhibit" id="value2-text">Species in Exhibit:</label>
+        <input type="number" id="spe-ex-edit" class="form_co" name="species_in_exhibit11" min="0" value=""></input>
+        <br>
+        <label for="exhibit_total" id="value3-text">Exhibit Size:</label>
+        <input type="number" id="ani-exh-edit" class="form_co" name="exhibit_total11" min="0" value=""></input>
+        <br>
+      </form>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close2" type="submit" onclick="editExhibit({{exhibit_id}})" value="OK"></input>
+  </div>
+</div>
+<!-- error text for repeat animal -->
+
+</body>

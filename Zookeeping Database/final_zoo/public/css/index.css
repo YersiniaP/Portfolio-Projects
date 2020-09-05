@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+body {
+    margin:0px;
+    height: auto;
+    display: inline-flex;
+    font-family: Verdana, sans-serif;   
+}
+
+.big_boy {
+  width:100%;
+  height: 100%;
+  position: fixed;
+}
+
+nav {
+    position: absolute;
+    height: 268px;
+    width: 100%;
+}
+
+.top {
+  margin: auto;
+  max-width: 785px;
+  min-width: 785px;
+  background-color: black;
+  height: 280px;
+}
+
+.main {
+  display: inline-flex;
+  overflow: hidden;
+  height: auto;
+  width: 306px;
+  /* text-align: justify; */
+
+
+}
+
+.title-top{
+  display: flex;
+}
+
+.main_logo {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 120px;
+  height: 160px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.fade_logo {
+  /* border: 3px solid white; */
+  height: 160px;
+  width: 120px;
+}
+
+.main_text {
+  text-align: center;
+  width: 176px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  border-right: 1px solid white;
+}
+
+.main_title {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+
+.main_2 {
+  font-weight: bold;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  margin-top: -12px;
+}
+
+.main_3 {
+  font-weight: bold;
+  font-size: 74px;
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+}
+
+.top-left{
+  width: 486px;
+  height: 100px;
+}
+
+.fa{
+  float: right;
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.fa:hover{
+  opacity: .7;
+  text-decoration: none;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+  margin-right: 10px;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+
+.middle-left{
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.left{
+  width: 486px;
+}
+
+.other2{float: right;}
+
+.top_bar {
+  display: flex;
+  width: auto;
+  height: 65px;
+
+  background-color: black;
+
+  text-align: center;
+
+  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.box-1 {
+  border-radius: 10px;
+  color: white;
+  margin-left: 28px;
+  margin-right: 28px;
+ }
+
+
+/* source code from https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+  .btn {
+    display: inline-block;
+    line-height: 50px;
+    height: 65px;
+    width: 100px;
+    cursor: pointer;
+
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0b5509;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .btn:hover, .btn:focus, .btn:active {
+    color: white;
+  }
+  .btn:hover:before, .btn:focus:before, .btn:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  /* ////////////////////////// */
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-top: 1px solid grey;
+}
+
+.box-1:hover .dropdown-content {display: block;}
+
+a:hover {
+  text-decoration: underline;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.bottom {
+  position: absolute;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,78 @@
+.form_co{
+  width: 100px;
+  height: 20px;
+}
+
+#diff_font{
+  font-size: 15px;
+}
+
+#next-side{
+  font-size: 30px;
+  padding-top:25px;
+}
+
+.fbutton{
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid black;
+  color: white;
+  margin: 3px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.edit-button{
+  background-color: #0275d8;
+}
+
+.delete-button{
+  background-color: #d9534f;
+}
+
+.actual-new{
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.new-u{
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  background-color: green;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 1px;
+  font-size: 17px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.actual-new:hover{
+  text-decoration: none;
+}
+
+.new-u:hover{
+  opacity: .5;
+}
+
+.fbutton:hover{
+  text-decoration: none;
+  opacity: .5;
+}
+
+#hidden-div{
+  display: none;
+}
+
+.top-top{
+  display: inline-flex;
+  vertical-align: middle;
+}

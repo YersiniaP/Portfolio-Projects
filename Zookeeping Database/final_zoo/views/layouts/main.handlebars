@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title >Willamette River Zoo</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="css/{{style}}">
+  <link rel="stylesheet" href="css/{{style1}}">
+  <script src="js/{{java}}" charset="utf-8" defer></script>
+  <script src="js/{{java1}}" charset="utf-8" defer></script>
+  <script src="js/{{java2}}" charset="utf-8" defer></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <img class="big_boy" src="pics/panda.jpg" alt="background">
+
+  <nav>
+    <div class= "top">
+      <div class= "title-top">
+        <div onclick="location.href='/';" class="main">
+          <span class="main_logo" id="left_logo">
+              <img class="fade_logo" src="pics/tiger.jpg" alt="main logo">
+          </span>
+
+          <span class="main_text">
+            <div class="main_title">Willamette</div>
+            <div class="main_2">River</div>
+            <div class="main_3">Zoo</div>
+          </span>
+        </div>
+
+        <div class="left">
+          <div class="top-left">
+            <a class="fa fa-twitter" href="#"></a>
+            <a class="fa fa-facebook" href="#"></a>
+            <a class="fa fa-instagram" href="#"></a>
+          </div>
+          <div class="middle-left">
+            <div class="other1">" Zoo animals are ambassadors for their cousins in the wild. "</div>
+            <div class="other2">-Jack Hanna</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="top_bar">
+          <div class="box-1">
+            <div onclick="location.href='map';" class="btn btn-one">
+              <span>Map</span>
+            </div>
+          </div>
+
+          <div class="box-1">
+            <div class="btn one">
+              <span>Exhibits</span>
+            </div>
+            <div class="dropdown-content">
+              <a href="exhibits">All Exhibits</a>
+              <a href="addexhibit">Add Exhibits</a>
+              <a href="exhibittozookeeper">Exhibit to Zookeepers</a>
+            </div>
+          </div>
+
+        <div class="box-1">
+          <div class="btn two">
+            <span>Animals</span>
+          </div>
+          <div id="two" class="dropdown-content">
+            <a href="animals">All Animals</a>
+            <a href="species">All Species</a>
+            <a href="addanimal">Add Animal</a>
+            <a href="addspecies">Add Species</a>
+          </div>
+        </div>
+
+        <div class="box-1">
+          <div class="btn">
+            <span>Staff</span>
+          </div>
+          <div id="three" class="dropdown-content">
+            <a href="zookeepers">All Staff</a>
+            <a href="addkeep">Add Staff</a>
+            <a href="zookeepertoexhibits">Zookeepers to Exhibit</a>
+          </div>
+        </div>
+
+        <div class="box-1">
+          <div onclick="location.href='aboutus';" class="btn btn-five">
+            <span>About Us</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+ {{{body}}}
+</body>

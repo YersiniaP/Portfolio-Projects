@@ -1,0 +1,97 @@
+<div class="next">
+    <div class="box">
+      <div class="cont">
+        <p>Team: Frankenstein Bears</p>
+        <p>Members: Sarah Leon & Samuel Schneider</p>
+        <p>May 9, 2020 </p>
+        <strong>Overview </strong>
+        <p>The Willamette River Zoo is rapidly expanding and needs an efficient way to manage all its
+          employees and animals. In recent months, they have grown to 25 zookeepers, 28 different
+          species, 8 exhibits, and 180 total animals. Specifically, they need to ensure that the number of
+          employees is appropriate for the number of exhibits and animals on display. The zoo also needs
+          to ensure that an exhibit can support the animals it contains and can only sustainably house a
+          certain number of unique species. For the social and reproductive health of the animals, each
+          species always needs to be represented with an adequate number of animals.
+        </p>
+        <p>A database will help the zoo organize this data and ensure that operations are running both
+          sustainably and profitably. It is their priority to properly take care of the animals and educate the
+          public but would like to do with a minimum number of zookeepers and efficiently as possible.
+          Implementation of the database will reveal if there are currently areas over-capacity,
+          inappropriately staffed, or have room for expansion.
+        </p>
+        <strong>Database Outline</strong>
+        <p>zookeepers – Zoo employees who take care the animals in each exhibit </p>
+        <ul>
+          <li>keeper_id – PK, auto increment, not NULL, int; unique identifier for zookeeper. </li>
+          <li>keeper_name – varchar; full name of zookeeper. </li>
+          <li> exhibit_count - int; number of exhibits the zookeeper is responsible for. </li>
+          <li>keeper_total – int; total number of animals responsible for. </li>
+          <li>Relationships</li>
+          <ul>
+            <li>zookeeper-animal: A zookeeper can manage many animals. An animal must be
+                managed by at least one zookeeper. (M:M)
+            </li>
+            <li>zookeeper-exhibit: A zookeeper must manage at least one exhibit. And each
+                exhibit must be managed by at least one zookeeper. (M:M)
+            </li>
+          </ul>
+        </ul>
+
+        <p>animals – each individual animal that lives in the zoo </p>
+        <ul>
+          <li>animal_id – PK, auto increment, not NULL, int; unique identifier for animal</li>
+          <li>animal_name - varchar; name of animal</li>
+          <li>species_type - int; which will be the speciesid number (in species entity)</li>
+          <li>exhibit_home – int; which will be the exhibitid number (in exhibit entity)</li>
+          <li>Relationships</li>
+          <ul>
+            <li>zookeeper-animal: A zookeeper can manage many animals. An animal must be
+                managed by at least one zookeeper. (M:M)
+            </li>
+            <li>animal-exhibit: An animal can only ever belong to one exhibit. Each exhibit can
+                contain many animals (including zero). (1:M)
+            </li>
+          </ul>
+        </ul>
+
+        <p>exhibits – Where animals are contained and where zookeepers take care of them </p>
+        <ul>
+          <li>exhibit_id – PK, auto increment, not NULL, int; unique identifier for exhibit. </li>
+          <li>exhibit_name – varchar; name of exhibit.</li>
+          <li>species_in_exhibit – int; number of species in exhibit. </li>
+          <li>exhibit_total - int; total number of animals in exhibit </li>
+          <li>Relationships</li>
+          <ul>
+            <li>zookeeper-exhibit: A zookeeper must manage at least one exhibit. And each
+                exhibit must be managed by at least one zookeeper. (M:M)
+            </li>
+            <li>animal-exhibit: An animal can only ever belong to one exhibit. Each exhibit can
+                contain many animals (including zero). (1:M)
+            </li>
+            <li>exhibit-species: An exhibit must house at least one species. And at species can
+                be found in exactly one exhibit. (1:M)
+            </li>
+          </ul>
+        </ul>
+
+        <p>species - The specific family type the animal belongs to.</p>
+        <ul>
+          <li>species_id – PK, auto increment, not NULL, int; unique identifier for species. </li>
+          <li>species_name - varchar; name of species. </li>
+          <li>number_exhibit – int; which will be the exhibited number (in exhibit entity) </li>
+          <li>species_population – int; number of animals in species; </li>
+          <li>Relationships</li>
+          <ul>
+            <li>Exhibit-Species: An exhibit must house at least one species. And at species can
+                be found in exactly one exhibit. (1:M)
+            </li>
+          </ul>
+        </ul>
+
+        <strong>ER Diagram</strong>
+        <div class="ph"><img class="picture" src="pics/ERD.png" alt="erdiagram"></img></div>
+        <strong>Schema</strong>
+        <div class="ph"><img class="picture" src="pics/schema.png" alt="schema"></img></div>
+      </div>
+    </div>
+  </div>

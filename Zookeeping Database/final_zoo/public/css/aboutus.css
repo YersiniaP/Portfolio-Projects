@@ -1,0 +1,30 @@
+.next{
+  height: 320px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 290px;
+}
+
+.box{
+  margin: auto;
+  max-width: 780px;
+  height: auto;
+  background-color: #E1C699;
+  text-align: center;
+  padding-bottom: 25px;
+
+  color: black;
+}
+
+.cont{
+  padding: 15px;
+  text-align: left;
+}
+
+.picture{
+  margin: 15px;
+  width: 600px;
+  height: 325px;
+  border-radius: 15px;
+}

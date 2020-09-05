@@ -1,0 +1,99 @@
+  <div class="bot">
+   <div class="outterbox">
+      <div class="box">
+          <div class="slideshow-container">
+
+            <!-- source code https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+            <div class="mySlides fade">
+              <img class="all_pics" src="pics/gorilla.jpg" style="width:100%">
+              <div class="text">Rala - Rainforest Exhibit</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img class="all_pics" src="pics/lion.jpg" style="width:100%">
+              <div class="text">James and Kiara – Serengeti Exhibit</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img class="all_pics" src="pics/otter.jpg" style="width:100%">
+              <div class="text">Wednesday and Anita – Coastal Waters Exhibit</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img class="all_pics" src="pics/wolf.jpg" style="width:100%">
+              <div class="text">Remus - Temperate Forest</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <div class="overtext">
+              <h2>Welcome to Willamette River Zoo Webpage</h2>
+                Spend the day exploring over 5.2 acres of parkland and visit our 8 
+                main exhibits. Be transported to biomes all over the world and observe
+                the behaviors of 28 different animals species within them. Watch the
+                gyrfalcons soar in the Aviary and the caracals play in our newly
+                remodeled Desert habitat. Keep your eyes peeled for prairie dogs 
+                to peak out of their burrows and see the gentle grace of bison in
+                the Prairelands. Afterwards, you can cool off with the walruses in
+                the Arctic Circle or even the sea otters in Coastal Waters. But
+                no trip is complete without admiring the majestic lion pride in 
+                our Serengeti.
+            </div>
+      </div>
+
+      <div class="undertext">
+        <div class="under-title">Featured News</div>
+        <div class="news">
+          <div class="article">
+            <img class="picture" src="pics/beetle.jpg" alt="Beetle"></img>
+            <div class="post-text">
+              <div class="top-text">New Look - Same Zoo!</div>
+              <div class="bottom-text">The Willamette River Zoo's website has gotten an upgrade and some stellar new pictures! What do you think about our new look?</div>
+            </div>
+
+          </div>
+          <div class="article">
+            <img class="picture" src="pics/newg.jpg" alt="Newg"></img>
+            <div class="post-text">
+              <div class="top-text">New Arrivals on the Serengeti</div>
+              <div class="bottom-text">Congratulations to Reebok and Ophelia! Help us celebrate the birth of  three healthy cheetah cubs: Crystal, Rocket, and Umlaut!</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>

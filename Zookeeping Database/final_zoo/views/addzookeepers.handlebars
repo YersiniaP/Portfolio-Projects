@@ -1,0 +1,93 @@
+
+<body>
+  <section class="next" id="next1">
+    <div class="box">
+      <div id="find-add" class="tit">Add Staff</div>
+      <div class="form_ex">
+
+        <form id="text_box" method="post">
+          <label for="exhibit_name1" Zookeeper Name:</label>
+          <input type="text" id="exi-name" class="form_co" name="keeper_name" ><br>
+          <label for="species_in_exhibit1">Number of Exhibits the staff manages:</label>
+          <input type="number" id="spe-ex" class="form_co" name="max_exhibits" min="0" ><br>
+          <label for="exhibit_total1">Total number of Animals responsible for:</label>
+          <input type="number" id="ani-exh" class="form_co" name="keeper_total" min="0" ><br>
+          <input class= "button" id="new-add" type="submit" value="Add">
+      </form>
+    </div>
+  </div>
+
+</section>
+<!-- ///////////////////////////////////////////////////// -->
+<!-- error text for not enough info -->
+<div id="hide"></div>
+<div class="error1" id="error_box1">
+  <div class="top_button">
+    <div class="text-top">Willamette River Zoo</div>
+    <input class= "close" id="close-box" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle">
+    <div class="roundx">X</div>
+    <div class="comment">
+      <div class="error_text">Too add a new Exhibit you must fill in all the fields.</div>
+      <div class="error_text">Click the ok button or the x in the corner and fill out</div>
+      <div class="error_text">all the nessicary fields.</div>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close" type="submit" value="OK"></input>
+  </div>
+</div>
+
+<!-- when you want to delete what you just added -->
+<div id="hide"></div>
+<div class="error1" id="error_box2">
+  <div class="top_button">
+    <div class="text-top1">Willamette River Zoo</div>
+    <input class= "close" id="close-box1" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle">
+    <div class="comment">
+      <div class="error_text">Are you sure you want to delete this element?</div>
+      <div class="error_text">Click the Ok to delete element.</div>
+      <div class="error_text">Click top corner to cancel.</div>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close1" type="submit" value="OK"></input>
+  </div>
+</div>
+
+<!-- when you wan to edit something -->
+<div id="hide"></div>
+<div class="edit-box" id="bigedit">
+  <div class="top_button">
+    <div class="text-top1">Willamette River Zoo</div>
+    <input class= "close" id="close-box2" type="submit" value="X"></input>
+  </div>
+  <div class="error_middle1">
+    <div class="tit">Edit Exhibit</div>
+    <div class="form_ex">
+      <form id="text_box" method action>
+        <label id="value0-text" for="exhibit_id">Exhibit Id:</label>
+        <input type="text" id="exi-id-edit" class="form_co" name="exhibit_id" value>
+        <br>
+        <label id="value1-text" for="exhibit_name">Exhibit Name:</label>
+        <input type="text" id="exi-name-edit" class="form_co" name="exhibit_name" value>
+        <br>
+        <label id="value2-text" for="species_in_exhibit">Species in Exhibit:</label>
+        <input type="number" id="spe-ex-edit" class="form_co" name="species_in_exhibit" min="0" value>
+        <br>
+        <label id="value3-text" for="exhibit_total">Animals in Exhibit:</label>
+        <input type="number" id="ani-exh-edit" class="form_co" name="exhibit_total" min="0" value>
+        <br>
+      </form>
+    </div>
+  </div>
+  <div class="other-close">
+    <input class="ok" id="ok-close2" type="submit" value="OK"></input>
+  </div>
+</div>
+<!-- error text for repeat animal -->
+
+</body>

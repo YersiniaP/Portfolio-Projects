@@ -1,0 +1,326 @@
+@charset "UTF-8";
+.next{
+  height: 320px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 290px;
+}
+
+.box{
+  margin: auto;
+  max-width: 780px;
+  min-width: 780px;
+  height: auto;
+  background-color: #E1C699;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  color: black;
+}
+
+.tit{
+  padding-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  width:780px;
+  font-weight: bold;
+}
+
+
+#text_box{
+  display: block;
+  width:390px;
+}
+
+#text_box label{
+  width: 150px;
+  display: inline-block;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+
+/* source code for button is https://webdeasy.de/en/top-css-buttons-en/ */
+.button {
+  min-width: 120px;
+  min-height: 40px;
+  float: left;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #0b5509;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(0,0,0,.40);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button:hover {
+  color: grey;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+/* /////////////////////////////////////////////////// */
+
+.form_ex{
+  display: inline-block;
+  width: 100%;
+}
+
+.pos-button{
+  width:300px;
+  margin-top: -7%;
+  float: right;
+}
+
+.side-note{
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 750px;
+}
+
+
+.table1{
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+td{
+  background-color: white;
+  border: 1px solid black;
+}
+
+#hide{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.error1{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+
+  margin: auto;
+  width: 400px;
+  height: 140px;
+  background-color: white;
+  border: 2px solid black;
+  display: none;
+}
+
+.edit-box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 2px solid black;
+  display: none;
+}
+
+.text-top1{
+  padding: 5px;
+  color: grey;
+  width:95%;
+}
+
+.text-top{
+  padding: 5px;
+  color: grey;
+  width:90%;
+}
+
+.error_middle1{
+  width: 95%;
+  height: 75%;
+  padding: 15px;
+}
+
+.top_button{
+  height: 30px;
+  display: inline-flex;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.text-top{
+  padding: 5px;
+  color: grey;
+  width:90%;
+}
+
+.close{
+  height: 20px;
+  width: 20px;
+  background-color: lightgrey;
+  margin: 5px;
+  font-weight: bold;
+  color: grey;
+  border: 0px solid black;
+  border-radius: 3px;
+}
+
+.close:hover{
+  background-color: red;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.closex{
+  height: 20px;
+  width: 20px;
+  background-color: lightgrey;
+  margin: 5px;
+  font-weight: bold;
+  color: grey;
+  border: 0px solid black;
+  border-radius: 3px;
+}
+
+.closex:hover{
+  background-color: red;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.error_middle{
+  display: inline-flex;
+  width: 92%;
+  height: 30%;
+  padding: 15px;
+}
+
+.roundx{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+
+.comment{
+  height: 100px;
+  font-size: 11px;
+  padding-left: 10px;
+}
+
+.other-close{
+  width: 100%;
+  height: 40px;
+  background-color: lightgrey;
+}
+
+.ok{
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  width:70px;
+}
+
+.ok:hover{
+  cursor: pointer;
+}
+
+.top2{
+  display: inline-flex;
+}
+
+#update_box{
+  display: block;
+}
+
+#hide1{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.fbutton{
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid black;
+  color: white;
+  margin: 3px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.edit-button{
+  background-color: #0275d8;
+}
+
+.delete-button{
+  background-color: #d9534f;
+}
+
+#spe-id{
+  width: 100px;
+}
+
+#exh-id{
+  width: 100px;
+}
+
+.anima{
+  max-width: 65px;
+  height: 25px;
+  background-color: grey;
+  border: 1px solid black;
+  opacity: 50%;
+  border-radius: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+
+  overflow: auto;
+}
